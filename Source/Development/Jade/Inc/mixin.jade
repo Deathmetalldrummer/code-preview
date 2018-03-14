@@ -1,0 +1,19 @@
+mixin codepen(id, height, version, tab, preview)
+    p(data-height="#{height}" data-theme-id="dark" data-slug-hash="#{id}" data-default-tab="#{tab}" data-user="Ragnarok" data-embed-version="#{version}" data-pen-title="Validate Form Bootstrap" data-preview='#{preview}' class="codepen") See the Pen
+         a(href="http://codepen.io/Ragnarok/pen/QGRdOp/") Validate Form Bootstrap
+         | by Ragnarok (
+         a(href="http://codepen.io/Ragnarok") @Ragnarok
+         | ) on
+         a(href="http://codepen.io") CodePen
+         | .
+//- +codepen('QGRdOp', 400, 2, 'html,result', true)
+
+
+mixin article(id, header, tagname)
+    article.article.panel.panel-default(id=id)
+        .panel-body
+            h2.h2.page-header= header
+            .content
+                block
+                for tag in tagname
+                    span(class=tag).article__tag.label.label-ubuntu= tag

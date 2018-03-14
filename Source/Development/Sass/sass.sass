@@ -1,0 +1,32 @@
+@import Import/var
+@import Import/mixin
+
+body
+    font-family: 'Ubuntu', sans-serif
+a.list-group-item, button.list-group-item,
+a
+    color: $ubuntu-color
+    text-decoration: none
+    &:hover,&:focus
+        color: $ubuntu-color
+        text-decoration: none
+    &:active
+        color: $ubuntu-color-dark
+        text-decoration: underline
+.affix
+    position: fixed !important
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover
+    color: #fff
+    background-color: $ubuntu-color
+    border-color: $ubuntu-color
+.page-header
+    margin-top: 10px
+.label-ubuntu
+    background-color: $ubuntu-color
+    color: #fff
+@import Import/_header
+@import Import/_section
+@import Import/_sidebar
+@import Import/_footer
